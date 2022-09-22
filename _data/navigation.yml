@@ -8,5 +8,7 @@ main:
      url: /categories/
    - title: "태그"
      url: /tags/
+   - title: "검색"
+     url: /search/
   # - title: "포트폴리오"
   #   url: /portfolio/
