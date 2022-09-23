@@ -39,7 +39,7 @@ https://www.youtube.com/watch?v=_zoyaVdqHQ8&list=PLjP7GdaJBM7GIJSjelGybVbm-S1VEr
 
 
 
-![ProjectBlueprint 만들기](../images/follow-unreal-make-project-projectblueprint.png)
+![ProjectBlueprint 만들기]({{ "/images/follow-unreal-make-project-projectblueprint.png" | relative_url }})
 
 
 
@@ -53,11 +53,17 @@ https://www.youtube.com/watch?v=_zoyaVdqHQ8&list=PLjP7GdaJBM7GIJSjelGybVbm-S1VEr
 
 단축키 `Ctrl+n`
 
-![새 레벨 선택](../images/follow-unreal-make-new-level.png)
+
+
+![새 레벨 선택]({{ "/images/follow-unreal-make-new-level.png" | relative_url }})
+
+
 
 Basic 선택 후 생성
 
-![Basic 레벨 생성](../images/follow-unreal-make-basic-new-level.png)
+![Basic 레벨 생성]({{ "/images/follow-unreal-make-basic-new-level.png" | relative_url }})
+
+
 
 상단의 플레이 버튼 누르면 캐릭터나 카메라의 실제 조작이 가능함.
 
@@ -73,7 +79,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 !여기서 영상처럼 바닥을 작게하고 싶다면 아웃라이너 혹은 뷰포트에서 Floor 선택 후 -> 디테일 탭으로 가->스케일 8인 x, y, z 값들을 전부 1로 수정하면 바닥이 작아진다. 필자는 그대로 8인 값으로 하였다.
 
-![플로어 크기 조정](../images/follow-unreal-scale-floor.png)
+![플로어 크기 조정]({{ "/images/follow-unreal-scale-floor.png" | relative_url }})
 
 
 
@@ -83,11 +89,15 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 좌상단 창->액터 배치를 눌러 액터 배치 탭을 생성 후
 
-![images](../images/follow-unreal-actor-batch-window.png)
+![액터 배치]({{ "/images/follow-unreal-actor-batch-window.png" | relative_url }})
+
+
 
 기본을 고른 후->원하는 위치에 플레이어 스타트에 좌클릭을 누르면서 뷰포트로 드래그 앤 드롭을 해준다.
 
-![images](../images/follow-unreal-drag-and-drop-player-start.png) 
+![플레이어 스타트 배치]({{ "/images/follow-unreal-drag-and-drop-player-start.png" | relative_url }})
+
+
 
 그러고 다시 스타트를 해주면 그 위치에 캐릭터가 생성된다.
 
@@ -105,7 +115,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 하단에 콘텐츠 브라우저 탭이 생긴다.
 
-![콘텐츠 드로어](../images/follow-unreal-content-drawer.png)
+![콘텐츠 드로어]({{ "/images/follow-unreal-content-drawer.png" | relative_url }})
 
 
 
@@ -113,7 +123,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 이제 All->콘텐츠->StarterContent->Architecture->Wall_Door_400x300을 좌클릭 누르면서 드래그 앤 드롭으로 뷰포트 안에 배치하자.
 
-![문 드래그 앤 드롭](../images/follow-unreal-wall-door-400x300-drag-and-drop.png) 
+![문 드래그 앤 드롭]({{ "/images/follow-unreal-wall-door-400x300-drag-and-drop.png" | relative_url }})
+
+
 
 
 
@@ -151,7 +163,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 기즈모는 우 상단에 이 아이콘 클릭으로도 변경 가능하다. 
 
-![기즈모 모드](../images/follow-unreal-gizmo-mode.png)
+![기즈모 모드]({{ "/images/follow-unreal-gizmo-mode.png" | relative_url }})
+
+
 
 #### 기즈모 모드
 
@@ -176,7 +190,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 `Alt` 키를 누른 채 벽에 반대쪽 방향을 가르키는 화살표를 `좌클릭 드래그` 해서 똑같은 벽을 복사하여 반대쪽도 모서리가 잘맞게 만들어준다.
 
-![알트 좌클릭 드래그 반대쪽 벽 복사](../images/follow-unreal-alt-left-click-copy.png)
+![알트 좌클릭 드래그 반대쪽 벽 복사]({{ "/images/follow-unreal-alt-left-click-copy.png" | relative_url }})
 
 
 
@@ -190,7 +204,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 디테일 탭->스태틱 메시->콘텐츠 브라우저에서 선택된 에셋 사용을 클릭하면 벽으로 바뀐다.
 
-![콘텐츠 브라우저에서 선택된 에셋 사용](../images/follow-unreal-use-seleted-asset-from-content-browser.png)
+![콘텐츠 브라우저에서 선택된 에셋 사용]({{ "/images/follow-unreal-use-seleted-asset-from-content-browser.png" | relative_url }})
 
 
 
@@ -200,7 +214,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 모자란 부분을 스케일 기즈모로 변경 후 원하는 방향 좌클릭 드래그로 지붕을 덮어버리자.
 
-![지붕 만들기](../images/follow-unreal-make-roof.png)
+![지붕 만들기]({{ "/images/follow-unreal-make-roof.png" | relative_url }})
 
 
 
@@ -212,13 +226,15 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 기본 아이콘을 클릭하자
 
-![액터 배치 기본 아이콘](../images/follow-unreal-actor-batch-basic.png)
+![액터 배치 기본 아이콘]({{ "/images/follow-unreal-actor-batch-basic.png" | relative_url }})
+
+
 
 포인트 라이트를 방안으로 드래그 앤 드롭으로 배치 후
 
 이동 모드로 변경 후 적절한 위치에 배치하자
 
-![방 안에 포인트 라이트 배치](../images/follow-unreal-point-light--batch-in-a-room.png)
+![방 안에 포인트 라이트 배치]({{ "/images/follow-unreal-point-light--batch-in-a-room.png" | relative_url }})
 
 
 
@@ -232,7 +248,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 만약 못찾겠다. 전체로 설정후 visible 혹은 표시를 검색
 
-![images](../images/follow-unreal-point-light-unvisible.png)
+![포인트 라이트 비저블]({{ "/images/follow-unreal-point-light-unvisible.png" | relative_url }})
+
+
 
 일단 영상에서는 게임 시작 시에 라이트를 켜 주는 블루프린트 스크립트를 만들 것이라 한다.
 
@@ -246,7 +264,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 레벨 블루프린트 열기를 누르자
 
-![레벨 블루프린트 열기](../images/follow-unreal-open-level-blueprint.png)
+![레벨 블루프린트 열기]({{ "/images/follow-unreal-open-level-blueprint.png" | relative_url }})
 
 
 
@@ -260,7 +278,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 레벨 블루프린트 창에서 우클릭 함수호출 하단에 레퍼런스 생성 클릭
 
-![포인트 라이트 레퍼런스 생성](../images/follow-unreal-create-pointlight-reference.png)
+![포인트 라이트 레퍼런스 생성]({{ "/images/follow-unreal-create-pointlight-reference.png" | relative_url }})
+
+
 
 
 
@@ -268,7 +288,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 생성한 포인트 라이트 레퍼런스 오른쪽 파란색 작은 원 즉 핀을 `좌클릭 드래그`로 잡아당긴 후 visibility을 검색하여 ToggleVisibility (LightComponent)를 클릭 포인트 라이트 컴포넌트를 해도 되지만 영상에서는 라이트 컴포넌트를 고릅니다.
 
-![포인트 라이트 토글 비저블](../images/follow-unreal-pointlight-visible.png)
+![포인트 라이트 토글 비저블]({{ "/images/follow-unreal-pointlight-visible.png" | relative_url }})
+
+
 
 그러면 중간에 라이트 컴포넌트라는 노드도 생기면서 생성된다.
 
@@ -278,7 +300,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 그리고 BeginPlay 이벤트 노드에 Toggle Visibility 노드를 링크(연결) 한다.
 
-![비긴플레이에 링크](../images/follow-unreal-pointlight-visible-link-beginplay.png)
+![비긴플레이에 링크]({{ "/images/follow-unreal-pointlight-visible-link-beginplay.png" | relative_url }})
+
+
 
  BeginPlay 이벤트 노드는 게임이 시작되면 연결된 이벤트들이 모두 발동하는 노드이다.
 
@@ -290,7 +314,9 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 이번 실행은 실행 우측 점 3개를 클릭하여 시뮬레이트로 해보자
 
-![시뮬레이트](../images/follow-unreal-toggle-pointlight-simulate.png)
+![시뮬레이트]({{ "/images/follow-unreal-toggle-pointlight-simulate.png" | relative_url }})
+
+
 
 시뮬레이트 모드는 레벨을 만들 때 많이 사용하고 레벨을 관찰하기 위한 모드다. 
 
@@ -300,7 +326,11 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 다시 선택된 뷰포트로 바꾸어 실행도 해보자
 
-![선택된 뷰포트](../images/follow-unreal-toggle-pointlight-selected-viewport.png)
+
+
+![선택된 뷰포트]({{ "/images/follow-unreal-toggle-pointlight-selected-viewport.png" | relative_url }})
+
+
 
 다음은 이 기능을 사용자가 직접 불을 껐다 켤 수 있게 만든다고 한다.
 
@@ -328,40 +358,38 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 블루프린트란?
 
-​	비주얼 스크립팅 시스템
+- 비주얼 스크립팅 시스템
 
-​	시각적으로 특정 기능을 가진 노드들을 연결해서 코딩하는 시스템
+- 시각적으로 특정 기능을 가진 노드들을 연결해서 코딩하는 시스템
 
-​	레벨 블루프린는 각각의 레벨에서만 기능을 발휘
+레벨 블루프린는 각각의 레벨에서만 기능을 발휘
 
-​	클래스 블루프린트는 특정 레벨에만 한정되지 않음
+클래스 블루프린트는 특정 레벨에만 한정되지 않음
 
 ​	
 
-​	레벨 블루프린트 내의 스크립트는 해당 레벨 내에서만 유효함.
+레벨 블루프린트 내의 스크립트는 해당 레벨 내에서만 유효함.
 
-​	레벨 프린트 열었을 때 중앙의 모눈 창은 이벤트 그래프이다.
+레벨 프린트 열었을 때 중앙의 모눈 창은 이벤트 그래프이다.
 
-​	각 노드의 배치와 연결작업은 이벤트 그래픔에서 이루어짐.
+각 노드의 배치와 연결작업은 이벤트 그래픔에서 이루어짐.
 
-​		마우스 휠 위 아래 굴려 확대 축소 가능
+- 마우스 휠 위 아래 굴려 확대 축소 가능
+- 좌클릭 드래그로 여러 노드 한번에 선택 가능
+- 마우스 가져다 되면 간단하게 기능 확인 가능
 
-​		좌클릭 드래그로 여러 노드 한번에 선택 가능
+Tick 이벤트는 각 프레임마다 호출
 
-​		마우스 가져다 되면 간단하게 기능 확인 가능
+- 매 플레임마다 이 노드와 연결된 이벤트가 발동
 
-​		Tick 이벤트는 각 프레임마다 호출
+실행 핀은 실행 핀끼리만 연결됨
 
-​			매 플레임마다 이 노드와 연결된 이벤트가 발동
+파란 선 오브젝트를 연결하는 선
 
-​	실행 핀은 실행 핀끼리만 연결됨
+- 레벨 내 오브젝트의 레퍼런스들 연결
 
-​	파란 선 오브젝트를 연결하는 선
+하얀 선 실행을 나타내는 선
 
-​		레벨 내 오브젝트의 레퍼런스들 연결
+Toggle Visibility
 
-​	하얀 선 실행을 나타내는 선
-
-​	Toggle Visibility
-
-​		visibility를 토글 해줌(껐다 켰다 한다는 이야기)
+- visibility를 토글 해줌(껐다 켰다 한다는 이야기)
