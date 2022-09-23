@@ -1,14 +1,19 @@
 # main links
 main:
-  # - title: "Home"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-   - title: "카테고리"
-     url: /categories/
-   - title: "태그"
-     url: /tags/
-   - title: "검색"
-     url: /search/
-  # - title: "포트폴리오"
-  #   url: /portfolio/
+  - title: "홈"
+    url: /
+  #- title: "About"
+    #url: /about/
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/
+  - title: "검색"
+    url: /search/
+  #- title: "포트폴리오"
+    #url: /portfolio/
+docs:
+  - title: "Unreal Engine"
+    children:
+      - title: "Ureal Engine 따라하기"
+        url: /categories/followUE/
