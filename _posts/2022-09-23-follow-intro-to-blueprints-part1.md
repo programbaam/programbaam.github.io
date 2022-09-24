@@ -21,7 +21,7 @@ sidebar:
 
 레벨 블루프린트를 통해 라이트 켜기
 
-https://www.youtube.com/watch?v=_zoyaVdqHQ8&list=PLjP7GdaJBM7GIJSjelGybVbm-S1VErg5y&index=2.
+<https://www.youtube.com/watch?v=_zoyaVdqHQ8&list=PLjP7GdaJBM7GIJSjelGybVbm-S1VErg5y&index=2>
 
 
 
