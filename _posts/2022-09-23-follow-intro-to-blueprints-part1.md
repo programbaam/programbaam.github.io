@@ -2,7 +2,7 @@
 layout: single
 title:  "언리얼 따라하기 : Intro to Blueprints 01~02"
 categories: followUE
-tags: [followUE, UE, follow]
+tags: [followUE, UE, follow, intro-to-blueprints]
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -320,7 +320,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 시뮬레이트 모드는 레벨을 만들 때 많이 사용하고 레벨을 관찰하기 위한 모드다. 
 
-해보면 게임이 시작하면 불이 켜진느 걸  확인할 수 있다.
+해보면 게임이 시작하면 불이 켜지는 걸  확인할 수 있다.
 
 
 
@@ -352,6 +352,12 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 
 
+프로젝트
+
+<https://github.com/programbaam/unreal-study/tree/6bf3d30f3a2e5f9002d4838735e31860b19a4c47/ProjectBlueprint>
+
+
+
 ### 기타 정리
 
 블루 프린트는 크게 레벨 블루프린트와 클래스 블루프린트로 이루어짐.
@@ -372,7 +378,7 @@ WASD로 캐릭터 조작하고 마우스로 시점 조작 가능.
 
 레벨 프린트 열었을 때 중앙의 모눈 창은 이벤트 그래프이다.
 
-각 노드의 배치와 연결작업은 이벤트 그래픔에서 이루어짐.
+각 노드의 배치와 연결작업은 이벤트 그래프에서 이루어짐.
 
 - 마우스 휠 위 아래 굴려 확대 축소 가능
 - 좌클릭 드래그로 여러 노드 한번에 선택 가능
