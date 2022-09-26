@@ -561,7 +561,7 @@ D 텍스쳐와 연결된 Divde 노드들의 연결을 다 끊고 우클릭 name�
 
 창->월드 파티션->월드 파티션 에디터를 추가하고
 
-월드 파티션 탭에서 맵 전체를 드래그 한후 선택된 셀 로드하자
+월드 파티션 탭에서 맵 전체를 드래그 한후 우클릭 선택된 셀 로드하자
 
 ![월드 파티션 셀 로드]({{"/images/follow-unreal-rts-world-partion-editor-drag.png"|relative_url}})
 
