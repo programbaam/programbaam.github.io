@@ -37,6 +37,10 @@ sidebar:
 
 <https://youtu.be/8tw2-K5Qz0s>
 
+<https://github.com/alecyoun/webapp>
+
+
+
 
 
 AMD CPU라 가상머신이 실행이 안된다면
@@ -243,6 +247,10 @@ Build->Build Bundle(s)/APK(s)->Build APK(s)를 누르면
 
 우리가 프로젝트로 만든 앱이 핸드폰에서도 실행이 된다.
 
+<https://youtu.be/i9MlWxx0ihs>
+
+
+
 
 
 ## 디지털 액자 완성 앱 만들기
@@ -364,7 +372,114 @@ match_parent 전체화면 꽉채우는 것
 
 
 
+<https://youtu.be/LuE1n3ja1CY>
+
+
+
 ## 초보자도 10분이면 Mp3 플레이어 만들기
+
+빈 프로젝트로 디폴트로 생성
+
+
+
+프로젝트를 우선 만들면 빌드를 해서 컴파일이 되는 지 확인하고
+
+실행을 시켜 기본 프로젝트가 작동하는 지 항상 확인하자
+
+
+
+ 할때 중요한 곳들
+
+manifests 폴더
+
+java/com.example.myapplication/MainActivity.java
+
+res/layout/activity_main.xml
+
+중요함 이곳들에 파일을 추가하거나 수정할 거임
+
+
+
+텍스트뷰를 클릭해서 함수처리해서 할 예정
+
+activity_main.xml
+
+```xml
+ <TextView
+        android:id="@+id/hellobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+```
+
+버튼으로 수정
+
+
+
+mp3 파일하나를 리소스에 넣을 거임
+
+res 우클릭->New->Android Resource Directory
+
+Resource type을 raw로 바꾸고 OK
+
+여기에 mp3파일 드래그앤드롭 
+
+- 주의점 파일이름 대문자이면 안된다. 소문자나 숫자 가능
+
+```java
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView tv;
+    MediaPlayer mp;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mp=MediaPlayer.create(this, R.raw.testvoice);
+        mp.setLooping(false); //여러번 돌것이냐 false
+
+
+        tv=(TextView) this.findViewById(R.id.hellobutton);
+        tv.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!mp.isPlaying()){
+                    mp.start();
+                    tv.setText("Stop"); //틀어지면 스탑 뜸
+                } else{
+                    mp.pause();
+                    tv.setText("Start"); //멈추면 스타트 뜸
+                }
+            }
+        });
+    }
+}
+```
+
+기본적인 방법이지 비효율적으로 mp3 읽는다. 더 효율적인 방법이 존재하니
+
+나중에는 그렇게 하자
+
+
+
+<https://youtu.be/Bxiah93Znr0>
 
 
 
@@ -372,11 +487,144 @@ match_parent 전체화면 꽉채우는 것
 
 ## 음성인식 노트앱 만들기
 
+Basic Activity 템플릿으로 
 
+Async 비동기->함수 호출하자마자 넘어감
+
+- 화면이 자유롭게 움직임
+- 네트워크 통신이 예
+
+Sync 동기
+
+
+
+```java
+//생략
+public class MainActivity extends AppCompatActivity { //안에
+    //중략
+     @Override
+    protected void onCreate(Bundle savedInstanceState) { //안에
+        //중략
+         binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //안에
+//중략
+                //추가
+                VoiceTask voiceTask=new VoiceTask(); //버튼이 눌렸을 때 함수를 호출하게 끔 함.
+                voiceTask.execute(); 
+                //추가
+//생략
+```
+
+
+
+```java
+//생략
+public class MainActivity extends AppCompatActivity { //안에
+    //중략
+    //추가
+        public class VoiceTask extends AsyncTask<String, Integer, String> {
+        String str = null;
+
+        @Override
+        protected String doInBackground(String... params) {
+            // TODO Auto-generated method stub
+            try {
+                getVoice();
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            return str;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            try {
+
+            } catch (Exception e) {
+                Log.d("onActivityResult", "getImageURL exception");
+            }
+        }
+    }
+
+    private void getVoice() {
+
+        Intent intent = new Intent(); //intent 호출해서 음성 인식하는 것
+        intent.setAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, //어떤 언어
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM); //형태
+
+        String language = "ko-KR"; //한국어 지정
+
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, language);
+        startActivityForResult(intent, 2);
+
+    }
+    //추가
+```
+
+
+
+마이크 인식 못하는 이유는 
+
+세로로 점 3개인 Extended Controls
+
+->Microphone->Virtual microphone uses host audio input 토글이 오른쪽으로 가게 on
+
+그리고 핸드폰에서 음성인식도 수락해야한다.
+
+
+
+```java
+//생략
+public class MainActivity extends AppCompatActivity { //안에
+    //중략
+    //추가
+     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // TODO Auto-generated method stub
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+
+            ArrayList<String> results = data
+                    .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+
+            String str = results.get(0);
+            Toast.makeText(getBaseContext(), str, Toast.LENGTH_SHORT).show();
+
+            TextView tv = findViewById(R.id.textview_first);// 난 텍스트를 보여주는 id가 textview_first 선택
+            tv.setText(str);
+        }
+    }
+    //추가
+```
+
+
+
+<https://youtu.be/8JeTW-aCx8k>
+
+<https://github.com/alecyoun/MyApplicationSpeak>
 
 
 
 ## 위치 기반 어플만들기
+
+지도, 위치기반 서비스, (GPS)
+
+지도  x lat, y log
+
+manifest.xml은 꼭 알아야함
+
+layout .xml 잘알아야함
+
+Activitiy 클래스 잘아야함
+
+
+
+<https://youtu.be/sdfmjiqSWRc>
+
+
 
 
 

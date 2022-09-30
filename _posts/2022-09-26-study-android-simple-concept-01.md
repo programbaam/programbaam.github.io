@@ -212,3 +212,4 @@ HTTPS
 - www.pyrasis.com
 - 아마존 웹 서비스를 다루는 기술
 
+<https://youtu.be/IAVFL-UDlSs>
