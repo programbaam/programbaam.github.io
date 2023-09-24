@@ -27,3 +27,8 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# 폴더들
+no-images/
+temp-posts/
+writting-posts/
