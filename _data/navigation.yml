@@ -23,3 +23,7 @@ docs:
         url: /categories/android-concept/
       - title: "스피링 개념 공부"
         url: /categories/spring-concept/
+  - title: "블로그"
+    children:
+      - title: "블로그 만들기"
+        url: /categories/make-blog/
