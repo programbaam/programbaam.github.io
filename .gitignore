@@ -33,7 +33,9 @@ no-images/
 temp-posts/
 writting-posts/
 .obsidian/
+.obsidian
 
 # 파일
 */sync.ffs_db
 */desktop.ini
+sync.ffs_db
