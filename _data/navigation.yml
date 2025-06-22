@@ -13,6 +13,10 @@ main:
   #- title: "포트폴리오"
     #url: /portfolio/
 docs:
+  - title: "PS"
+    children:
+      - title: "백준"
+        url: /categories/boj/
   - title: "Unreal Engine"
     children:
       - title: "Ureal Engine 따라하기"
