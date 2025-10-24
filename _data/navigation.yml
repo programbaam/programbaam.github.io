@@ -64,11 +64,11 @@ docs:
       # - title: "포트폴리오"
       #   url: /categories/portfolio/
   - title: "Tools"
-    # children:
+    children:
     # - title: "Git/Github"
     #   url: /categories/git-github/
-    # - title: "GithubPages"
-    #   url: /categories/github-pages/
+      - title: "GithubPages"
+        url: /categories/github-pages/
     # - title: "Obsidian"
     #   url: /categories/obsidian/
     # - title: "블렌더"
@@ -79,7 +79,3 @@ docs:
     #   url: /categories/math/
     # - title: "물리"
     #   url: /categories/physics/
-  - title: "블로그"
-    children:
-      - title: "블로그 만들기"
-        url: /categories/make-blog/
