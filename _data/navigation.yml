@@ -13,22 +13,72 @@ main:
   #- title: "포트폴리오"
     #url: /portfolio/
 docs:
-  - title: "PS"
+  - title: "알고리즘"
     children:
       - title: "백준"
         url: /categories/boj/
       - title: "프로그래머스"
         url: /categories/programmers/
-  - title: "Unreal Engine"
+      # - title: "자료구조"
+      #   url: /categories/data-structure/
+      # - title: "알고리즘 이론"
+      #   url: /categories/algorithm-theory/
+  - title: "컴퓨터 과학"
+    # children:
+    #   - title: "운영체제"
+    #     url: /categories/operating-system/
+    #   - title: "데이터베이스"
+    #     url: /categories/database/
+    #   - title: "소켓프로그래밍"
+    #     url: /categories/socket-programming/
+  - title: "프로그래밍"
     children:
-      - title: "Ureal Engine 따라하기"
-        url: /categories/followUE/
-  - title: "스프링, 안드로이드"
-    children:
+      # - title: "C"
+      #   url: /categories/c-programming/
+      # - title: "C++"
+      #   url: /categories/cpp-programming/
+      # - title: "Win32"
+      #   url: /categories/win32/
+      # - title: "디자인 패턴"
+      #   url: /categories/design-pattern/
+      # - title: "프로그래밍 프로젝트"
+      #   url: /categories/programming-project/
       - title: "안드로이드 개념 공부"
         url: /categories/android-concept/
       - title: "스피링 개념 공부"
         url: /categories/spring-concept/
+  - title: "그래픽스"
+    # children:
+    #   - title: "DirectX9"
+    #     url: /categories/directx9/
+    #   - title: "셰이더"
+    #     url: /categories/shader/
+    #   - title: "3d-modeling"
+    #     url: /categories/3d-modeling/
+  - title: "게임 개발"
+    children:
+      - title: "Ureal Engine 따라하기"
+        url: /categories/followUE/
+      # - title: "게임기획"
+      #   url: /categories/game-design/
+      # - title: "포트폴리오"
+      #   url: /categories/portfolio/
+  - title: "Tools"
+    # children:
+    # - title: "Git/Github"
+    #   url: /categories/git-github/
+    # - title: "GithubPages"
+    #   url: /categories/github-pages/
+    # - title: "Obsidian"
+    #   url: /categories/obsidian/
+    # - title: "블렌더"
+    #   url: /categories/blender/
+  - title: "기초학문"
+    # children:
+    # - title: "수학"
+    #   url: /categories/math/
+    # - title: "물리"
+    #   url: /categories/physics/
   - title: "블로그"
     children:
       - title: "블로그 만들기"
